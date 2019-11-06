@@ -1,0 +1,1294 @@
+/** Reset **/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video 
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+/* Réinitialisation de l'ajout de taille du "padding" et bordures */
+html 
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after
+{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+/* Réinitialisation du rôle d'affichage HTML5 pour les anciens navigateurs */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section 
+{
+	display: block;
+}
+body 
+{
+	line-height: 1;
+}
+ol, ul 
+{
+	list-style: none;
+}
+blockquote, q 
+{
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after 
+{
+	content: '';
+	content: none;
+}
+table 
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/** Général **/
+
+body
+{
+    font-family: 'Montserrat', sans-serif;
+}
+
+section
+{
+    width: 100%;
+    /*border: 1px solid orange;*/
+}
+
+.contenu
+{
+    margin: auto;
+    width: 70%;
+    /*border: 1px solid red;*/
+}
+
+h1, h2, h3
+{
+    font-weight: 700;
+}
+
+h1, h2, h3, p
+{
+    line-height: 120%;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+@font-face
+{
+    font-family: 'AvenirDemiBold';
+    src: url(../polices/AvenirNextLTPro-Demi.otf);
+}
+
+
+/********************/
+/****** HEADER ******/
+/********************/
+
+#en-tete
+{
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+}
+
+
+/** Cadre **/
+.cadre
+{
+    /*border: 1px solid green;*/
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-color: #3a3a3a;
+}
+
+/** Nav **/
+.menu
+{
+    padding: 1em 0;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+
+.logo
+{
+    width: 25%;
+    /*border: 1px solid orange;*/
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    overflow: hidden;
+}
+
+.logo img
+{
+    width: 180px;
+    vertical-align: middle;
+    /*border: 1px solid blue;*/  
+}
+
+nav
+{
+    width: 75%;
+}
+
+nav ul
+{
+    text-align: right;
+    /*border: 1px solid orange;*/
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    align-items: flex-start;
+    -webkit-align-items: flex-start;
+}
+
+nav li
+{
+    margin: 0 0 0 20px;
+    padding: 0.4em 0.6em;
+    background-color: black;
+    border-radius: 10px;
+}
+
+nav a
+{
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'proxima-soft', sans-serif;
+    font-style: normal; 
+    vertical-align: middle;
+    /*border: 1px solid yellow;*/
+}
+
+nav img
+{
+    margin-right: 10px;
+    margin-left: 5px;
+    vertical-align: middle;
+    height: 18px;
+    width: 20px;
+}
+
+
+
+/******************/
+/****** MAIN ******/
+/******************/
+
+#deroulement
+{
+    padding: 2em 0;
+}
+
+
+/** Parcours **/
+
+.parcours
+{
+    border: 1px solid #5d83b1;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    border-radius: 5px;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+    overflow: hidden;
+}
+
+.etape
+{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    padding: 5px;
+    overflow: hidden;
+    width: 20%;
+}
+
+.etape span
+{
+    font-size: 18px;
+    font-weight: 500;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    overflow: hidden;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+.etape h1
+{
+    font-weight: 500;
+    font-size: 12px;
+    font-family: 'AvenirDemiBold';
+    padding: 0 5px;
+}
+
+.etape.active
+{
+    background-color: #7a92b6;
+    clip-path: polygon(-10% -10%, 80% -10%, 100% 50%, 80% 110%, -10% 110%, -10% 50%);
+}
+
+.etape:nth-child(1) h1
+{
+    color: white;
+}
+
+.etape:nth-child(1) span
+{
+    color: white;
+    border: 2px solid white;
+}
+
+
+/** Devis **/
+
+#procedure
+{
+    padding: 3em 0 7em;
+}
+
+.box
+{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+}
+
+.box > div:last-child
+{
+    z-index: 1;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    align-items: flex-start;
+    -webkit-align-items: flex-start;
+    margin-bottom: 6.25em;
+}
+
+.box > div:last-child p
+{
+    /*border: 1px solid yellow;*/
+    font-size: 13px;
+    font-weight: 300;
+    font-style: italic;
+    font-family: 'proxima-soft', 'sans-serif';
+    color: #4e4e4e;
+    padding: 0 0 5px 2.4em;
+    width: 12em;
+}
+
+.box > div:last-child > img
+{
+    /*border: 1px solid yellow;*/
+    padding: 0 0 15px 15px;
+}
+
+.devis
+{
+    border-radius: 10px;
+    width: 90%;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    /*border: 1px solid green;*/
+    box-shadow: 0 0 5px 0 rgba(88, 88, 88, 0.5);
+    background-color: #f6f6f6;
+    padding: 2em;
+    z-index: 2;
+}
+
+.devis > .titre
+{
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    font-family: 'proxima-soft', sans-serif;
+    padding: 0 20em 1em 0;
+    text-align: center;
+}
+
+.devis > .titre h1
+{
+    width: 353px;
+}
+
+.devis > .info
+{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    width: 100%;
+}
+
+.image, .sous_info, .boutons
+{
+    /*border: 1px solid blue;*/
+    width: 100%;
+}
+
+.sous_info
+{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    padding: 0 1em;
+}
+
+.sous_info > p
+{
+    font-size: 13px;
+    font-style: normal;
+    font-family: 'proxima-soft', sans-serif;
+    color: #4e4e4e;
+    padding-bottom: 10px;
+}
+
+.image img
+{
+    width: auto;
+    height: 221px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 rgba(88, 88, 88, 0.5);
+}
+
+.boutons
+{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
+}
+
+.boutons > a:nth-child(1), .boutons > a:nth-child(2)
+{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+.boutons > a:nth-child(1)
+{
+    background-color: #7d4d82;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 14px;
+    border-radius: 4px;
+    width: 13em;
+    -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.boutons > a:nth-child(2)
+{
+    border: 1px solid #7d4d82;
+    color: #4e4e4e;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 9px 14px;
+    border-radius: 4px;
+    margin: 1em 0 0;
+    width: 13em;
+    -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.boutons > a:nth-child(1) > .triangle-right 
+{
+    margin-left: 10px;
+	border-top: 7.5px solid transparent;
+	border-left: 10px solid white;
+	border-bottom: 7.5px solid transparent;
+}
+
+.boutons > a:nth-child(2) > .triangle-right 
+{
+    margin-left: 10px;
+	border-top: 7.5px solid transparent;
+	border-left: 10px solid #4e4e4e;
+	border-bottom: 7.5px solid transparent;
+}
+
+.boutons_responsive
+{
+    display: none;
+}
+
+
+
+/********************/
+/****** FOOTER ******/
+/********************/
+
+#pied_de_page
+{
+    background-color: #363636;
+    /*border: 1px solid green;*/
+}
+
+#pied_de_page .sidenav
+{
+    display: none;
+}
+
+#pied_de_page .bloc
+{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    padding-bottom: 1em;
+}
+
+#pied_de_page .titre
+{
+    font-size: 18px;
+}
+
+.mention1, .mention2, .mention3
+{
+    color: white;
+    /*border: 1px solid orange;*/
+}
+
+.mention1 > .titre, .mention2 > .titre, .mention3 > .titre
+{
+    padding: 1em 0;
+}
+
+.mention1 > .titre p, .mention2 > .titre p, .mention3 > .titre p
+{
+    border: 5px solid #3fc1a9;
+    margin-top: -10px;
+    width: 6.8em;
+}
+
+.mention1 > .texte p, .mention2 > .texte p
+{
+    font-weight: 600;
+    font-size: 13px;
+    padding: 1em 0 5px;
+}
+
+.mention3 > .texte p
+{
+    font-weight: 600;
+    font-size: 15px;
+    padding: 1em 0 5px;
+}
+
+.mentions a
+{
+    color: white;
+}
+
+.mentions a:hover
+{
+    color: #3fc1a9;
+}
+
+.social
+{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    padding: 1em 0 0;
+}
+
+svg
+{
+    fill: white;
+    height: 30px;
+}
+
+
+
+@media screen and (max-width: 1280px)
+{ 
+    /** Général **/
+
+    .contenu
+    {
+        width: 80%;
+    }
+ 
+    
+    
+    /********************/
+    /****** HEADER ******/
+    /********************/
+    
+    
+    /** Nav **/
+    
+    .logo img
+    {
+        width: 165px;
+    }
+    
+    nav img
+    {
+        height: 16px;
+        width: 18px;
+    }
+    
+    nav li
+    {
+        padding: 0.36em 0.56em;
+    }
+    
+    nav a
+    {
+        font-size: 14px;
+    }
+    
+    
+    
+    /******************/
+    /****** MAIN ******/
+    /******************/
+    
+    #deroulement
+    {
+        padding: 29px 0;
+    }
+    
+    /** Parcours **/
+    
+    .etape
+    {
+        padding: 4px;
+    }
+
+    .etape span
+    {
+        font-size: 17px;
+        width: 23px;
+        height: 23px;
+    }
+
+    .etape h1
+    {
+        font-size: 11px;
+        margin-top: 2px;
+    }
+
+
+    /** Devis **/
+    
+    #procedure
+    {
+        padding: 44px 0 102px;
+    }
+
+    .box > div:last-child p
+    {
+        font-size: 12px;
+        width: 182px;
+        padding: 0 0 4px 35.4px;
+    }
+    
+    .box > div:last-child > img
+    {
+        padding: 0 0 14px 14px;
+    }
+    
+    .devis
+    {
+        padding: 29px;
+    }
+
+    .devis > .titre
+    {
+        font-size: 19px;
+        padding: 0 290px 15px 0;
+    }
+
+    .devis > .titre h1
+    {
+        width: 323px;
+    }
+    
+    .sous_info
+    {
+        padding: 0 15px;
+    }
+
+    .sous_info > p
+    {
+        font-size: 12px;
+        padding-bottom: 9px;
+    }
+
+    .image img
+    {
+        height: 201px;
+    }
+
+    .boutons > a:nth-child(1)
+    {
+        font-size: 13px;
+        padding: 9px 13px;
+    }
+
+    .boutons > a:nth-child(2)
+    {
+        font-size: 13px;
+        padding: 8px 13px;
+    }
+
+    .boutons > a:nth-child(1) > .triangle-right 
+    {
+        border-top: 6.5px solid transparent;
+        border-bottom: 6.5px solid transparent;
+    }
+
+    .boutons > a:nth-child(2) > .triangle-right 
+    {
+        border-top: 6.5px solid transparent;
+        border-bottom: 6.5px solid transparent;
+    }
+    
+    .box > div:last-child img.fleche
+    {
+        width: 42px;
+    }
+    
+    .box > div:last-child img.chevron
+    {
+        width: 37px;
+    }
+    
+    
+    
+    /********************/
+    /****** FOOTER ******/
+    /********************/
+    
+
+    #pied_de_page .titre
+    {
+        font-size: 17px;
+    }
+    
+    .mention1 > .texte p, .mention2 > .texte p
+    {
+        font-size: 12px;
+    }
+    
+    .mention3 > .texte p
+    {
+        font-size: 14px;
+    }
+    
+    svg
+    {
+        height: 27px;
+    }
+}
+
+
+
+@media screen and (max-width: 1024px)
+{ 
+    /** Général **/
+    
+    .contenu
+    {
+        width: 85%;
+    }
+ 
+    
+    
+    /********************/
+    /****** HEADER ******/
+    /********************/
+    
+    
+    /** Nav **/
+    
+    .logo img
+    {
+        width: 135px;
+    }
+    
+    nav img
+    {
+        height: 14px;
+        width: 16px;
+    }
+    
+    nav li
+    {
+        padding: 0.28em 0.48em;
+    }
+  
+    nav a
+    {
+        font-size: 12px;
+    }
+    
+    
+    
+    /******************/
+    /****** MAIN ******/
+    /******************/
+
+    #deroulement
+    {
+        padding: 26px 0;
+    }
+    
+    /** Parcours **/
+    
+    .etape
+    {
+        padding: 2px;
+    }
+
+    .etape span
+    {
+        font-size: 15px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .etape h1
+    {
+        font-size: 9px;
+        margin-top: 3px;
+    }
+
+
+    /** Devis **/
+    
+    #procedure
+    {
+        padding: 39px 0 82px;
+    }
+
+    .box > div:last-child p
+    {
+        font-size: 10px;
+        width: 162px;
+    }
+    
+    .box > div:last-child > img
+    {
+        padding: 0 0 12px 12px;
+    }
+
+    .devis > .titre
+    {
+        font-size: 17px;
+        padding: 0 260px 13px 0;
+    }
+
+    .devis > .titre h1
+    {
+        width: 283px;
+    }
+    
+    .sous_info
+    {
+        padding: 0 13px;
+    }
+
+    .sous_info > p
+    {
+        font-size: 10px;
+        padding-bottom: 7px;
+    }
+
+    .image img
+    {
+        height: 171px;
+    }
+
+    .boutons > a:nth-child(1)
+    {
+        font-size: 11px;
+        padding: 7px 11px;
+    }
+
+    .boutons > a:nth-child(2)
+    {
+        font-size: 11px;
+        padding: 6px 11px;
+    }
+
+    .boutons > a:nth-child(1) > .triangle-right 
+    {
+        border-top: 4.5px solid transparent;
+        border-bottom: 4.5px solid transparent;
+    }
+
+    .boutons > a:nth-child(2) > .triangle-right 
+    {
+        border-top: 4.5px solid transparent;
+        border-bottom: 4.5px solid transparent;
+    }
+    
+    .box > div:last-child img.fleche
+    {
+        width: 37px;
+    }
+    
+    .box > div:last-child img.chevron
+    {
+        width: 33px;
+    }
+    
+    
+    /********************/
+    /****** FOOTER ******/
+    /********************/
+    
+
+    #pied_de_page .titre
+    {
+        font-size: 15px;
+    }
+    
+    .mention1 > .texte p, .mention2 > .texte p
+    {
+        font-size: 10px;
+    }
+    
+    .mention3 > .texte p
+    {
+        font-size: 12px;
+    }
+    
+    .mentions a:hover
+    {
+        color: white;
+    }
+
+    svg
+    {
+        height: 24px;
+    }
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 768px)
+{ 
+    /** Général **/
+
+    .contenu
+    {
+        width: 90%;
+    }
+ 
+    
+    
+    /********************/
+    /****** HEADER ******/
+    /********************/
+    
+    
+    /** Nav **/
+    
+    .logo
+    {
+        width: 60%;
+    }
+    
+    .logo img
+    {
+        width: 130px;
+    }
+    
+    nav
+    {
+        width: 40%;
+    }
+    
+    nav img
+    {
+        height: 13px;
+        width: 15px;
+        margin: auto auto 1px auto;
+    }
+    
+    nav li
+    {
+        margin-left: 10px;
+        padding: 0.3em 0.5em;
+    }
+    
+    nav a > span
+    {
+        display: none;
+    }
+    
+    
+    
+    /******************/
+    /****** MAIN ******/
+    /******************/
+    
+    #deroulement
+    {
+        padding: 24px 0;
+    }
+    
+    
+    /** Parcours **/
+    
+    .etape
+    {
+        width: 80%;
+    }
+    
+    .etape span
+    {
+        font-size: 14px;
+        width: 18px;
+        height: 18px;
+    }
+    
+    .etape h1
+    {
+        font-size: 9px;
+    }
+    
+    .etape:nth-child(2),
+    .etape:nth-child(3),
+    .etape:nth-child(4),
+    .etape:nth-child(5)
+    {
+        width: 20%;
+    }
+    
+    .etape:nth-child(2) h1,
+    .etape:nth-child(3) h1,
+    .etape:nth-child(4) h1,
+    .etape:nth-child(5) h1
+    {
+        display: none;
+    }
+    
+    .etape.active
+    {
+        clip-path: polygon(-10% -10%, 80% -10%, 90% 50%, 80% 110%, -10% 110%, -10% 50%);
+    }
+
+
+    /** Devis **/
+    
+    #procedure
+    {
+        padding: 36px 0 74px;
+    }
+
+    .box > div:last-child p, .box > div:last-child > img
+    {
+        display: none;
+    }
+    
+    .devis
+    {
+        width: 100%;
+    }
+
+    .devis > .titre
+    {
+        font-size: 16px;
+        padding: 0 0 12px 0;
+    }
+
+    .devis > .titre h1
+    {
+        width: 100%;
+    }
+    
+    .devis > .info
+    {
+        flex-direction: column;
+        -webkit-flex-direction: column;
+    }
+    
+    .sous_info
+    {
+        padding: 10px 12px;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        justify-content: center;
+        -webkit-justify-content: center;
+    }
+
+    .sous_info > p
+    {
+        font-size: 10px;
+        padding-bottom: 6px;
+        text-align: center;
+    }
+    
+    .image
+    {
+        text-align: center;
+    }
+
+    .image img
+    {
+        max-width: 100%;
+        height: auto;
+        max-height: 221px;
+    }
+    
+    .boutons
+    {
+        align-items: center;
+        -webkit-align-items: center;
+    }
+
+    .boutons > a:nth-child(1)
+    {
+        font-size: 10px;
+        padding: 6px 10px;
+        width: 14em;
+    }
+
+    .boutons > a:nth-child(2)
+    {
+        font-size: 10px;
+        padding: 5px 10px;
+        width: 14em;
+    }
+
+    .boutons > a:nth-child(1) > .triangle-right 
+    {
+        border-top: 3.5px solid transparent;
+        border-bottom: 3.5px solid transparent;
+    }
+
+    .boutons > a:nth-child(2) > .triangle-right 
+    {
+        border-top: 3.5px solid transparent;
+        border-bottom: 3.5px solid transparent;
+    }
+    
+    .box > div:last-child
+    {
+        margin-bottom: 0;
+        display: none;
+    }
+    
+    .box > div:last-child img.fleche
+    {
+        width: 34px;
+    }
+    
+    .boutons_responsive img.chevron
+    {
+        width: 30px;
+    }
+    
+    .boutons_responsive
+    {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+    }
+    
+    
+    
+    /********************/
+    /****** FOOTER ******/
+    /********************/
+    
+    
+    #pied_de_page .bloc
+    {
+        display: none;
+    }
+    
+    #pied_de_page .sidenav
+    {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: center;
+        -webkit-justify-content: center;
+        flex-direction: column;
+        padding-bottom: 1em;
+    }
+    
+    #pied_de_page .titre
+    {
+        font-size: 14px;
+    }
+    
+    .dropdown .mention1, .dropdown .mention2, .dropdown .mention3
+    {
+        background: none;
+        border: none;
+        font-family: 'Montserrat', sans-serif;
+        padding: 0;
+    }
+    
+    .mention1 .titre p, .mention2 .titre p, .mention3 .titre p
+    {
+        border: 5px solid #3fc1a9;
+        margin-top: -10px;
+        width: 6.8em;
+    }
+    
+    .mentions a:hover
+    {
+        color: white;
+    }
+    
+    .social
+    {
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+        padding: 10px 1em 0;
+    }
+
+    svg
+    {
+        height: 22px;
+    }
+
+    .sidenav a, .dropdown-btn 
+    {
+        text-decoration: none;
+        display: block;
+        border: none;
+        background: none;
+        text-align: left;
+        cursor: pointer;
+        outline: none;
+        width: 100%;
+    }
+
+    .dropdown-container 
+    {
+        display: none;
+        margin-bottom: 1em;
+    }
+    
+    .fa-caret-down
+    {
+        color: white;
+        float: right;
+    }
+    
+    .dropdown-container a
+    {
+        color: white;
+        padding: 4px 0;
+        text-align: center;
+        font-size: 10px;
+        margin: auto;
+        font-weight: 500;
+    }
+    
+    .dropdown-container p
+    {
+        color: white;
+        padding: 4px 0;
+        text-align: center;
+        font-size: 12px;
+        margin: auto;
+        font-weight: 500;
+    }
+    
+    .dropdown:nth-child(3) .dropdown-container p
+    {
+        padding: 10px;
+    }
+    
+    .dropdown-container p
+    {
+        padding: 5px 4em;
+    }
+
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="38px" viewBox="0 0 40 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>noun_Recycle Arrow_783916</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#9DD9CD" offset="0%"></stop>
+            <stop stop-color="#68A297" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#9DD9CD" offset="0%"></stop>
+            <stop stop-color="#68A297" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home-(marge-230px)" transform="translate(-673.000000, -566.000000)">
+            <g id="part2" transform="translate(212.000000, 567.000000)">
+                <g id="perrsonnalisé" transform="translate(303.000000, 0.000000)">
+                    <g id="noun_Recycle-Arrow_783916" transform="translate(159.000000, 0.000000)">
+                        <g id="Group">
+                            <path d="M34.7308451,10.3235 C31.4723944,3.5445 24.1125352,-0.5615 16.4021831,0.7355 C8.89690141,1.998 3.33633803,7.9965 2.19070423,15.2155" id="Path" stroke="url(#linearGradient-1)" stroke-width="2"></path>
+                            <path d="M0.425422535,11.452 C0.550633803,11.398 0.69556338,11.4575 0.748802817,11.5845 L2.22225352,15.1055 L4.74471831,12.2615 C4.83591549,12.159 4.99169014,12.1505 5.09274648,12.243 C5.19380282,12.3355 5.20119718,12.494 5.11098592,12.596 L2.32971831,15.7315 C2.27352113,15.795 2.18922535,15.825 2.10591549,15.811 C2.02260563,15.797 1.95211268,15.7405 1.91957746,15.662 L0.294295775,11.78 C0.27556338,11.735 0.270633803,11.6865 0.278028169,11.6415 C0.292323944,11.56 0.345070423,11.487 0.425422535,11.452 Z" id="Path" stroke="url(#linearGradient-2)" fill-rule="nonzero"></path>
+                        </g>
+                        <g id="Group" transform="translate(3.000000, 20.000000)">
+                            <path d="M0.26915493,5.6765 C3.52760563,12.4555 10.8874648,16.5615 18.5973239,15.2645 C26.1030986,14.0025 31.663662,8.0035 32.8092958,0.7845" id="Path" stroke="url(#linearGradient-1)" stroke-width="2"></path>
+                            <path d="M34.5745775,4.548 C34.4493662,4.602 34.3044366,4.5425 34.2511972,4.4155 L32.7777465,0.8945 L30.2552817,3.7385 C30.1640845,3.841 30.0083099,3.8495 29.9072535,3.757 C29.8061972,3.6645 29.7988028,3.506 29.8890141,3.404 L32.6702817,0.2685 C32.7264789,0.205 32.8107746,0.175 32.8940845,0.189 C32.9773944,0.203 33.0478873,0.2595 33.0804225,0.338 L34.7057042,4.22 C34.7244366,4.265 34.7293662,4.3135 34.7219718,4.3585 C34.7076761,4.44 34.6549296,4.513 34.5745775,4.548 Z" id="Path" stroke="url(#linearGradient-2)" fill="url(#linearGradient-2)" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

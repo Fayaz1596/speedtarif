@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="82px" viewBox="0 0 46 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>retour</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="formulaire-documents" transform="translate(-229.000000, -365.000000)">
+            <g id="retour" transform="translate(252.000000, 406.000000) rotate(-180.000000) translate(-252.000000, -406.000000) translate(229.000000, 365.000000)">
+                <rect id="Rectangle" fill="#9DD9CD" x="0" y="-4.54747351e-13" width="46" height="82"></rect>
+                <path d="M29.6533603,61 C28.8190723,61 27.9904986,60.6371298 27.4247827,59.9342473 L13.6304588,42.7907723 C12.7790279,41.7307341 12.7904565,40.2163938 13.6618875,39.1706418 L27.9476413,22.0271668 C28.9562155,20.8156946 30.7590777,20.6528316 31.9733668,21.6614394 C33.1847987,22.6700472 33.3476563,24.4729693 32.3362249,25.6844415 L19.5504752,41.0307089 L31.8790808,56.351261 C32.8676549,57.5798767 32.6733687,59.3799416 31.4419367,60.3685487 C30.916221,60.7942783 30.2819335,61 29.6533603,61 Z" id="🎨-Icon-Сolor" fill="#4E4E4E" fill-rule="nonzero" transform="translate(23.000000, 41.000000) rotate(-180.000000) translate(-23.000000, -41.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,338 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0">
+        <title>SpeedTarif</title>
+        <link rel="stylesheet" href="css/devis4.css"/>
+        <link rel="stylesheet" href="https://use.typekit.net/vsa0nve.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i&display=swap" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+        
+        <header id="en-tete">
+            <div class="cadre">
+                <div class="menu contenu">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="img/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="img/enveloppe.svg"/>
+                                    <span>contact@speedtarif.fr</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/phonecall.svg"/>
+                                    <span>01 85 11 05 79</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        
+        <main>
+            <section id="deroulement">
+                <div class="contenu">
+                    <div class="parcours">
+                        <div class="etape active">
+                            <span>1</span>
+                            <h1>Devis</h1>
+                        </div>
+                        <div class="etape">
+                            <span>2</span>
+                            <h1>Tarifs</h1>
+                        </div> 
+                        <div class="etape">
+                            <span>3</span>
+                            <h1>Souscription</h1>
+                        </div> 
+                        <div class="etape">
+                            <span>4</span>
+                            <h1>Paiement</h1>
+                        </div> 
+                        <div class="etape">
+                            <span>5</span>
+                            <h1>Impression carte verte</h1>
+                        </div> 
+                    </div>
+                </div>
+            </section>
+            <section id="procedure">
+                <div class="contenu">
+                    <form action="devis5.html">
+                        <div class="intitule">
+                            <h1>Conducteur principal de la voiture </h1>
+                        </div>
+                        <div class="box">
+                            <div>
+                                <a href="devis3.html"><img src="img/retour.svg" class="retour"/></a>
+                            </div>
+                            <div class="devis">
+                                <div class="renseignement">
+                                    <div class="titre">
+                                        <h2>Identité</h2>
+                                    </div>
+                                    <div class="case">
+                                        <div class="zone">
+                                            <p>Nom :</p>
+                                            <input type="text" name="nom" required>
+                                            <div>
+                                                <p>Date de naissance :</p>
+                                                <input type="text" name="jj_date" required>
+                                                <input type="text" name="mm_date" required>
+                                                <input type="text" name="aaaa_date" required>
+                                            </div>
+                                        </div>
+                                        <div class="zone">
+                                            <div>
+                                                <p>Date d'obtention du permis :</p>
+                                                <input type="text" name="jj_obtention" required>
+                                                <input type="text" name="mm_obtention" required>
+                                                <input type="text" name="aaaa_obtention" required>
+                                            </div>
+                                            <p>Type de permis :</p>
+                                            <div class="arrow">
+                                                <span>
+                                                    <select name="type" required>
+                                                        <option value="">...</option>
+                                                        <option value="test">Test</option>
+                                                    </select>
+                                                </span>
+                                            </div>
+                                        </div>      
+                                    </div>
+                                </div>
+                                <div><hr></div>
+                                <div class="renseignement">
+                                    <div class="titre">
+                                        <h2>Adresse</h2>
+                                    </div>
+                                    <div class="case">
+                                        <div class="zone">
+                                            <p>Ville :</p>
+                                            <input type="text" name="ville" required>
+                                        </div>
+                                        <div class="zone">
+                                            <p>Code postal :</p>
+                                            <input type="text" name="code" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div><hr></div>
+                                <div class="renseignement">
+                                    <div class="titre">
+                                        <h2>Informations</h2>
+                                    </div>
+                                    <div class="case">
+                                        <div class="zone">
+                                            <p>Profession :</p>
+                                            <div class="arrow">
+                                                <span>
+                                                    <select name="type" required>
+                                                        <option value="">...</option>
+                                                        <option value="test">Test</option>
+                                                    </select>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="zone">
+                                            <p>Situation familiale :</p>
+                                            <div class="arrow">
+                                                <span>
+                                                    <select name="type" required>
+                                                        <option value="">...</option>
+                                                        <option value="test">Test</option>
+                                                    </select>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="zone" id="choix">
+                                            <p>Avez-vous déjà été suspendu de permis ?</p>
+                                            <div>
+                                                <button name="oui" class="btn">Oui</button>
+                                                <button name="non" class="btn allume">Non</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button type="submit" id="valider">    
+                                    <img src="img/suivant.svg" class="suivant"/>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="boutons_responsive">
+                            <a href="devis3.html"><img src="img/retour.svg" class="retour"/></a>
+                            <button type="submit" id="valider">    
+                                <img src="img/suivant.svg" class="suivant"/>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        
+        <footer id="pied_de_page">
+            <div class="mentions contenu">
+                <div class="bloc">
+                    <div class="mention1">
+                        <div class="titre">
+                            <h3>Plan du site :</h3>
+                            <p></p>
+                        </div>
+                        <div class="texte">
+                            <p><a href="#">Assurance auto</a></p>
+                            <p><a href="#">Assurance moto</a></p>
+                            <p><a href="#">Assurance mutuelle santé</a></p>
+                            <p><a href="#">Assurance habitation</a></p>
+                            <p><a href="#">Assurance jeune conducteur</a></p>
+                        </div>
+                    </div>
+                    <div class="mention2">
+                        <div class="titre">
+                            <h3>À propos :</h3>
+                            <p></p>
+                        </div>
+                        <div class="texte">
+                            <p><a href="#">Qui sommes-nous ?</a></p>
+                            <p><a href="#">Comment ça marche ?</a></p>
+                            <p><a href="#">Mentions légales</a></p>
+                            <p><a href="#">Foire aux questions</a></p>
+                            <p><a href="#">CGU</a></p>
+                        </div>
+                    </div>                    
+                    <div class="mention3">
+                        <div class="titre">
+                            <h3>Nous contacter :</h3>
+                            <p></p>
+                        </div>
+                        <div class="texte">
+                            <p>0185110579</p>
+                            <p>contact@actudata.fr</p>
+                            <p>26 rue des Sablons<br>95000 Montmagny</p>
+                            <div class="social">
+                                <div>
+                                    <a href="#" alt="facebook">
+                                        <svg viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <path d="M10,20 L12,20 L12,13.8 C12,13.247 12.447,12.8 13,12.8 L15.24,12.8 L15.685,11.2 L13,11.2 C12.447,11.2 12,10.753 12,10.2 L12,7.5 C12,6.452 12.897,5.6 14,5.6 L16,5.6 L16,4 L14,4 C11.794,4 10,5.57 10,7.5 L10,10.2 C10,10.753 9.553,11.2 9,11.2 L7,11.2 L7,12.8 L9,12.8 C9.553,12.8 10,13.247 10,13.8 L10,20 Z M13,22 L9,22 C8.447,22 8,21.553 8,21 L8,14.8 L6,14.8 C5.447,14.8 5,14.353 5,13.8 L5,10.2 C5,9.647 5.447,9.2 6,9.2 L8,9.2 L8,7.5 C8,4.468 10.691,2 14,2 L17,2 C17.553,2 18,2.447 18,3 L18,6.6 C18,7.152 17.553,7.6 17,7.6 L14,7.6 L14,9.2 L17,9.2 C17.312,9.2 17.607,9.347 17.796,9.595 C17.985,9.844 18.047,10.167 17.964,10.468 L16.964,14.067 C16.844,14.5 16.449,14.8 16,14.8 L14,14.8 L14,21 C14,21.553 13.553,22 13,22 L13,22 Z" class="facebook"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#" alt="linkedin">
+                                        <svg viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <path d="M4,10 L3.998,10 L4,20 L6,20 L6,10 L4,10 Z M6,22 L4,22 C2.897,22 2,21.103 2,20 L2,10 C2,8.897 2.897,8 4,8 L6,8 C7.103,8 8,8.897 8,10 L8,20 C8,21.103 7.103,22 6,22 L6,22 Z M15.5049,11.6924 C15.6579,11.6924 15.8129,11.7054 15.9659,11.7294 C17.3159,11.9504 18.3329,13.1964 18.3329,14.6294 L18.3329,20.0004 L19.9999,20.0004 L19.9999,14.5384 C19.9999,12.0364 17.9819,10.0004 15.4999,10.0004 C13.0189,10.0004 10.9999,12.0364 10.9999,14.5384 L10.9999,20.0004 L12.6669,20.0004 L12.6669,14.5384 C12.6669,13.6994 13.0319,12.9074 13.6699,12.3654 C14.1859,11.9274 14.8349,11.6924 15.5049,11.6924 M19.9999,22.0004 L18.3329,22.0004 C17.2309,22.0004 16.3329,21.1024 16.3329,20.0004 L16.3329,14.6294 C16.3329,14.1724 16.0299,13.7664 15.6449,13.7044 C15.3089,13.6464 15.0749,13.7964 14.9659,13.8884 C14.7759,14.0504 14.6669,14.2874 14.6669,14.5384 L14.6669,20.0004 C14.6669,21.1024 13.7699,22.0004 12.6669,22.0004 L10.9999,22.0004 C9.8979,22.0004 8.9999,21.1024 8.9999,20.0004 L8.9999,14.5384 C8.9999,10.9324 11.9159,8.0004 15.4999,8.0004 C19.0839,8.0004 21.9999,10.9324 21.9999,14.5384 L21.9999,20.0004 C21.9999,21.1024 21.1029,22.0004 19.9999,22.0004 M5,3 C4.448,3 4,3.448 4,4 C4,4.552 4.448,5 5,5 C5.552,5 6,4.552 6,4 C6,3.448 5.552,3 5,3 M5,7 C3.346,7 2,5.654 2,4 C2,2.346 3.346,1 5,1 C6.654,1 8,2.346 8,4 C8,5.654 6.654,7 5,7" class="linkedin"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#" alt="google">
+                                        <svg viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <path d="M12.0031295,4 C9.82112948,4 7.78312948,4.861 6.26312948,6.426 C4.74312948,7.989 3.94112948,10.052 4.00412948,12.235 C4.12112948,16.339 7.55312948,19.818 11.6531295,19.992 C16.0351295,20.165 19.7721295,16.78 19.9951295,12.419 C20.0021295,12.291 20.0011295,11.726 19.9991295,11.2 L12.9971295,11.2 L12.9971295,12.782 L18.3061295,12.782 L17.9011295,14.08 C17.1801295,16.394 15.3521295,17.982 13.0111295,18.328 C11.2651295,18.581 9.44612948,18.082 8.02312948,16.945 C6.62612948,15.832 5.75012948,14.214 5.61812948,12.505 C5.48012948,10.698 6.07712948,8.976 7.30312948,7.653 C8.96912948,5.853 11.6621295,5.16 13.9701295,5.909 L14.7431295,4.48 C13.8681295,4.161 12.9491295,4 12.0031295,4 M11.9961295,21.999 C11.8551295,21.999 11.7121295,21.996 11.5691295,21.99 C6.44112948,21.773 2.15112948,17.423 2.00412948,12.292 C1.92712948,9.564 2.92912948,6.986 4.82812948,5.032 C6.72912948,3.077 9.27612948,2 12.0031295,2 C13.4371295,2 14.8231295,2.298 16.1221295,2.885 C16.4831295,3.048 16.7641295,3.358 16.8911295,3.736 C17.0201295,4.119 16.9841295,4.543 16.7921295,4.898 L15.5001295,7.282 C15.1491295,7.934 14.3571295,8.214 13.6651295,7.925 C12.0121295,7.252 9.99212948,7.692 8.77012948,9.012 C7.92812948,9.921 7.51712948,11.107 7.61212948,12.351 C7.70212948,13.509 8.30612948,14.613 9.27012948,15.382 C10.2641295,16.175 11.5261295,16.528 12.7181295,16.35 C13.8181295,16.187 14.7301295,15.635 15.3501295,14.782 L12.4471295,14.782 C11.6481295,14.782 10.9971295,14.132 10.9971295,13.332 L10.9971295,10.65 C10.9971295,9.851 11.6481295,9.2 12.4471295,9.2 L20.5471295,9.2 C21.3401295,9.2 21.9911295,9.845 21.9971295,10.638 C22.0001295,11.269 22.0021295,12.336 21.9931295,12.52 C21.7201295,17.832 17.2771295,21.999 11.9961295,21.999" class="google"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidenav">
+                    <div class="dropdown">
+                        <button class="dropdown-btn mention1">
+                            <div class="titre">
+                                <h3>
+                                    Plan du site                                
+                                    <i class="fa fa-caret-down"></i>
+                                </h3>
+                                <p></p>
+                            </div>
+                        </button>
+                        <div class="dropdown-container">
+                            <div class="texte">
+                                <p><a href="#">Assurance auto</a></p>
+                                <p><a href="#">Assurance moto</a></p>
+                                <p><a href="#">Assurance mutuelle santé</a></p>
+                                <p><a href="#">Assurance habitation</a></p>
+                                <p><a href="#">Assurance jeune conducteur</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropdown-btn mention2">
+                            <div class="titre">
+                                <h3>
+                                    À propos 
+                                    <i class="fa fa-caret-down"></i></h3>
+                                <p></p>
+                            </div>
+                        </button>
+                        <div class="dropdown-container">
+                            <div class="texte">
+                                <p><a href="#">Qui sommes-nous ?</a></p>
+                                <p><a href="#">Comment ça marche ?</a></p>
+                                <p><a href="#">Mentions légales</a></p>
+                                <p><a href="#">Foire aux questions</a></p>
+                                <p><a href="#">CGU</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropdown-btn mention3">
+                            <div class="titre">
+                                <h3>
+                                    Nous contacter
+                                    <i class="fa fa-caret-down"></i>
+                                </h3>
+                                <p></p>
+                            </div>
+                        </button>
+                        <div class="dropdown-container">
+                            <div class="texte">
+                                <p>0185110579</p>
+                                <p>contact@actudata.fr</p>
+                                <p>26 rue des Sablons<br>95000 Montmagny</p>
+                                <div class="social">
+                                    <div>
+                                        <a href="#" alt="facebook">
+                                            <svg viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <path d="M10,20 L12,20 L12,13.8 C12,13.247 12.447,12.8 13,12.8 L15.24,12.8 L15.685,11.2 L13,11.2 C12.447,11.2 12,10.753 12,10.2 L12,7.5 C12,6.452 12.897,5.6 14,5.6 L16,5.6 L16,4 L14,4 C11.794,4 10,5.57 10,7.5 L10,10.2 C10,10.753 9.553,11.2 9,11.2 L7,11.2 L7,12.8 L9,12.8 C9.553,12.8 10,13.247 10,13.8 L10,20 Z M13,22 L9,22 C8.447,22 8,21.553 8,21 L8,14.8 L6,14.8 C5.447,14.8 5,14.353 5,13.8 L5,10.2 C5,9.647 5.447,9.2 6,9.2 L8,9.2 L8,7.5 C8,4.468 10.691,2 14,2 L17,2 C17.553,2 18,2.447 18,3 L18,6.6 C18,7.152 17.553,7.6 17,7.6 L14,7.6 L14,9.2 L17,9.2 C17.312,9.2 17.607,9.347 17.796,9.595 C17.985,9.844 18.047,10.167 17.964,10.468 L16.964,14.067 C16.844,14.5 16.449,14.8 16,14.8 L14,14.8 L14,21 C14,21.553 13.553,22 13,22 L13,22 Z" class="facebook"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#" alt="linkedin">
+                                            <svg viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <path d="M4,10 L3.998,10 L4,20 L6,20 L6,10 L4,10 Z M6,22 L4,22 C2.897,22 2,21.103 2,20 L2,10 C2,8.897 2.897,8 4,8 L6,8 C7.103,8 8,8.897 8,10 L8,20 C8,21.103 7.103,22 6,22 L6,22 Z M15.5049,11.6924 C15.6579,11.6924 15.8129,11.7054 15.9659,11.7294 C17.3159,11.9504 18.3329,13.1964 18.3329,14.6294 L18.3329,20.0004 L19.9999,20.0004 L19.9999,14.5384 C19.9999,12.0364 17.9819,10.0004 15.4999,10.0004 C13.0189,10.0004 10.9999,12.0364 10.9999,14.5384 L10.9999,20.0004 L12.6669,20.0004 L12.6669,14.5384 C12.6669,13.6994 13.0319,12.9074 13.6699,12.3654 C14.1859,11.9274 14.8349,11.6924 15.5049,11.6924 M19.9999,22.0004 L18.3329,22.0004 C17.2309,22.0004 16.3329,21.1024 16.3329,20.0004 L16.3329,14.6294 C16.3329,14.1724 16.0299,13.7664 15.6449,13.7044 C15.3089,13.6464 15.0749,13.7964 14.9659,13.8884 C14.7759,14.0504 14.6669,14.2874 14.6669,14.5384 L14.6669,20.0004 C14.6669,21.1024 13.7699,22.0004 12.6669,22.0004 L10.9999,22.0004 C9.8979,22.0004 8.9999,21.1024 8.9999,20.0004 L8.9999,14.5384 C8.9999,10.9324 11.9159,8.0004 15.4999,8.0004 C19.0839,8.0004 21.9999,10.9324 21.9999,14.5384 L21.9999,20.0004 C21.9999,21.1024 21.1029,22.0004 19.9999,22.0004 M5,3 C4.448,3 4,3.448 4,4 C4,4.552 4.448,5 5,5 C5.552,5 6,4.552 6,4 C6,3.448 5.552,3 5,3 M5,7 C3.346,7 2,5.654 2,4 C2,2.346 3.346,1 5,1 C6.654,1 8,2.346 8,4 C8,5.654 6.654,7 5,7" class="linkedin"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#" alt="google">
+                                            <svg viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <path d="M12.0031295,4 C9.82112948,4 7.78312948,4.861 6.26312948,6.426 C4.74312948,7.989 3.94112948,10.052 4.00412948,12.235 C4.12112948,16.339 7.55312948,19.818 11.6531295,19.992 C16.0351295,20.165 19.7721295,16.78 19.9951295,12.419 C20.0021295,12.291 20.0011295,11.726 19.9991295,11.2 L12.9971295,11.2 L12.9971295,12.782 L18.3061295,12.782 L17.9011295,14.08 C17.1801295,16.394 15.3521295,17.982 13.0111295,18.328 C11.2651295,18.581 9.44612948,18.082 8.02312948,16.945 C6.62612948,15.832 5.75012948,14.214 5.61812948,12.505 C5.48012948,10.698 6.07712948,8.976 7.30312948,7.653 C8.96912948,5.853 11.6621295,5.16 13.9701295,5.909 L14.7431295,4.48 C13.8681295,4.161 12.9491295,4 12.0031295,4 M11.9961295,21.999 C11.8551295,21.999 11.7121295,21.996 11.5691295,21.99 C6.44112948,21.773 2.15112948,17.423 2.00412948,12.292 C1.92712948,9.564 2.92912948,6.986 4.82812948,5.032 C6.72912948,3.077 9.27612948,2 12.0031295,2 C13.4371295,2 14.8231295,2.298 16.1221295,2.885 C16.4831295,3.048 16.7641295,3.358 16.8911295,3.736 C17.0201295,4.119 16.9841295,4.543 16.7921295,4.898 L15.5001295,7.282 C15.1491295,7.934 14.3571295,8.214 13.6651295,7.925 C12.0121295,7.252 9.99212948,7.692 8.77012948,9.012 C7.92812948,9.921 7.51712948,11.107 7.61212948,12.351 C7.70212948,13.509 8.30612948,14.613 9.27012948,15.382 C10.2641295,16.175 11.5261295,16.528 12.7181295,16.35 C13.8181295,16.187 14.7301295,15.635 15.3501295,14.782 L12.4471295,14.782 C11.6481295,14.782 10.9971295,14.132 10.9971295,13.332 L10.9971295,10.65 C10.9971295,9.851 11.6481295,9.2 12.4471295,9.2 L20.5471295,9.2 C21.3401295,9.2 21.9911295,9.845 21.9971295,10.638 C22.0001295,11.269 22.0021295,12.336 21.9931295,12.52 C21.7201295,17.832 17.2771295,21.999 11.9961295,21.999" class="google"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="js/devis.js" type="text/javascript"></script>
+    </body>
+</html>

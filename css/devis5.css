@@ -1,0 +1,1294 @@
+/** Reset **/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video 
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+/* Réinitialisation de l'ajout de taille du "padding" et bordures */
+html 
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after
+{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+/* Réinitialisation du rôle d'affichage HTML5 pour les anciens navigateurs */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section 
+{
+	display: block;
+}
+body 
+{
+	line-height: 1;
+}
+ol, ul 
+{
+	list-style: none;
+}
+blockquote, q 
+{
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after 
+{
+	content: '';
+	content: none;
+}
+table 
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/** Général **/
+
+body
+{
+    font-family: 'Montserrat', sans-serif;
+}
+
+section
+{
+    width: 100%;
+    /*border: 1px solid orange;*/
+}
+
+.contenu
+{
+    margin: auto;
+    width: 70%;
+    /*border: 1px solid red;*/
+}
+
+h1, h2, h3, p
+{
+    line-height: 120%;
+}
+
+h1, h2, h3
+{
+    font-weight: 700;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+hr
+{
+    border: 1px solid #e8e8e8;
+}
+
+@font-face
+{
+    font-family: AvenirDemiBold;
+    src: url(../polices/AvenirNextLTPro-Demi.otf);
+}
+
+
+/********************/
+/****** HEADER ******/
+/********************/
+
+#en-tete
+{
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+}
+
+
+/** Cadre **/
+
+.cadre
+{
+    /*border: 1px solid green;*/
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-color: #3a3a3a;
+}
+
+/** Nav **/
+
+.menu
+{
+    padding: 1em 0;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+
+.logo
+{
+    width: 20%;
+    /*border: 1px solid orange;*/
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    overflow: hidden;
+}
+
+.logo img
+{
+    width: 180px;
+    vertical-align: middle;
+    /*border: 1px solid blue;*/  
+}
+
+nav
+{
+    width: 80%;
+}
+
+nav ul
+{
+    text-align: right;
+    /*border: 1px solid orange;*/
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    align-items: flex-start;
+}
+
+nav li
+{
+    margin: 0 0 0 20px;
+    padding: 0.4em 0.6em;
+    background-color: black;
+    border-radius: 10px;
+}
+
+nav a
+{
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: proxima-soft, sans-serif;
+    font-style: normal; 
+    vertical-align: middle;
+    /*border: 1px solid yellow;*/
+}
+
+nav img
+{
+    margin-right: 10px;
+    margin-left: 5px;
+    vertical-align: middle;
+    height: 18px;
+    width: 20px;
+}
+
+
+
+/******************/
+/****** MAIN ******/
+/******************/
+
+#deroulement
+{
+    padding: 2em 0;
+}
+
+
+/** Parcours **/
+
+.parcours
+{
+    border: 1px solid #5d83b1;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    border-radius: 5px;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+    overflow: hidden;
+}
+
+.etape
+{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    padding: 5px;
+    overflow: hidden;
+    width: 20%;
+}
+
+.etape span
+{
+    font-size: 18px;
+    font-weight: 500;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    overflow: hidden;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+.etape h1
+{
+    font-weight: 500;
+    font-size: 12px;
+    padding: 0 5px;
+    font-family: AvenirDemiBold;
+}
+
+.etape.active
+{
+    background-color: #7a92b6;
+    clip-path: polygon(-10% -10%, 80% -10%, 100% 50%, 80% 110%, -10% 110%, -10% 50%);
+}
+
+.etape:nth-child(1) h1
+{
+    color: white;
+}
+
+.etape:nth-child(1) span
+{
+    color: white;
+    border: 2px solid white;
+}
+
+
+/** Devis **/
+
+#procedure
+{
+    padding: 0 0 8em;
+}
+
+.box
+{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+.box > div:first-child, .box > div:last-child
+{
+    z-index: 1;
+}
+
+.devis
+{
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    /*border: 1px solid green;*/
+    box-shadow: 0 0 5px 0 rgba(88, 88, 88, 0.5);
+    background-color: #f6f6f6;
+    padding: 1em 0 2em;
+    z-index: 2;
+}
+
+.devis > .titre
+{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    padding: 0 1em 5px;
+}
+
+.devis > .titre h1
+{
+    color: #4e4e4e;
+    font-size: 14px;
+}
+
+.devis > .titre a
+{
+    color: white;
+    background-color: #7a92b6;
+    padding: 0 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    height: 35px;
+    overflow: hidden;
+    -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.devis > .titre h2
+{
+    font-size: 14px;
+    font-family: AvenirDemiBold;
+    font-weight: 500;
+}
+
+.devis > .titre span
+{
+    font-size: 40px;
+    font-weight: 300;
+    padding-right: 8px;
+}
+
+.separateur hr
+{
+    width: 95%;
+}
+
+.formulaire
+{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    width: 90%;
+    margin: auto;
+    padding: 0 1em;
+    /*border: 1px solid green;*/
+}
+
+.case
+{
+    display: flex; 
+    display: -webkit-flex;
+    padding: 10px 0;
+}
+
+.case > p
+{
+    font-size: 14px;
+    font-weight: 500;
+    color: #858585;
+    /*border: 1px solid blue;*/
+    width: 50%;
+    margin: auto;
+    font-family: AvenirDemiBold;
+}
+
+::placeholder
+{
+    color: lightgray;
+}
+
+.zone
+{
+    width: 50%;
+    display: flex;
+    -webkit-display: flex;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    overflow: hidden;
+    position: relative;
+    /*border: 1px solid blue;*/
+}
+
+.zone span
+{
+    background-color: white;
+}
+
+.zone select
+{
+    background-color: transparent;
+    border-radius: 2px;
+    color: #4e4e4e;
+    -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+    position: relative;
+    padding: 0 12px;
+    color: #7c8495;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    border: 1px solid #dddddd;
+    width: 297px;
+    height: 45px;
+    z-index: 2;
+}
+
+.zone:before
+{
+    content: "";
+    position: absolute;
+    right: 16px;
+    top: 19px;
+    width: 0; 
+    height: 0; 
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #4e4e4e;
+}
+
+input:focus, select:focus
+{
+    outline: none;
+}
+
+#valider, 
+#valider:hover, 
+#valider:focus, 
+#valider:active
+{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.boutons_responsive
+{
+    display: none;
+}
+
+
+/********************/
+/****** FOOTER ******/
+/********************/
+
+#pied_de_page
+{
+    background-color: #363636;
+    /*border: 1px solid green;*/
+}
+
+#pied_de_page .sidenav
+{
+    display: none;
+}
+
+#pied_de_page .bloc
+{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    padding-bottom: 1em;
+}
+
+#pied_de_page .titre
+{
+    font-size: 25px;
+}
+
+.mention1, .mention2, .mention3
+{
+    color: white;
+    /*border: 1px solid orange;*/
+}
+
+.mention1 > .titre, .mention2 > .titre, .mention3 > .titre
+{
+    padding: 1em 0;
+}
+
+.mention1 > .titre p, .mention2 > .titre p, .mention3 > .titre p
+{
+    border: 5px solid #3fc1a9;
+    margin-top: -10px;
+    width: 6.8em;
+}
+
+.mention1 > .texte p, .mention2 > .texte p
+{
+    font-weight: 600;
+    font-size: 14px;
+    padding: 1em 0 5px;
+}
+
+.mention3 > .texte p
+{
+    font-weight: 600;
+    font-size: 18px;
+    padding: 1em 0 5px;
+}
+
+.mentions a
+{
+    color: white;
+}
+
+.mentions a:hover
+{
+    color: #3fc1a9;
+}
+
+.social
+{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    padding: 1em 0 0;
+}
+
+svg
+{
+    fill: white;
+}
+
+
+
+@media screen and (max-width: 1280px)
+{ 
+    /** Général **/
+
+    .contenu
+    {
+        width: 80%;
+    }
+ 
+    
+    
+    /********************/
+    /****** HEADER ******/
+    /********************/
+    
+    
+    /** Nav **/
+    
+    .logo img
+    {
+        width: 165px;
+    }
+    
+    nav img
+    {
+        height: 16px;
+        width: 18px;
+    }
+    
+    nav li
+    {
+        padding: 0.36em 0.56em;
+    }
+    
+    nav a
+    {
+        font-size: 14px;
+    }
+    
+    
+
+    /******************/
+    /****** MAIN ******/
+    /******************/
+    
+    
+    #deroulement
+    {
+        padding: 29px 0;
+    }
+    
+    
+    /** Parcours **/
+    
+    .etape
+    {
+        padding: 4px;
+    }
+
+    .etape span
+    {
+        font-size: 17px;
+        width: 23px;
+        height: 23px;
+    }
+
+    .etape h1
+    {
+        font-size: 11px;
+        margin-top: 2px;
+    }
+    
+    
+    /** Devis **/
+
+    #procedure
+    {
+        padding: 0 0 118px;
+    }
+
+    .devis
+    {
+        padding: 15px 0 29px;
+    }
+
+    .devis > .titre
+    {
+        padding: 0 15px 4px;
+    }
+
+    .devis > .titre h1
+    {
+        font-size: 13px;
+    }
+
+    .devis > .titre a
+    {
+        padding: 0 14px;
+        height: 32px;
+    }
+
+    .devis > .titre h2
+    {
+        font-size: 13px;
+        margin-top: 1px;
+    }
+
+    .devis > .titre span
+    {
+        font-size: 36px;
+        padding-right: 7px;
+    }
+
+    .separateur hr
+    {
+        width: 95%;
+    }
+
+    .formulaire
+    {
+        padding: 0 15px;
+    }
+
+    .case
+    {
+        padding: 9px 0;
+    }
+
+    .case > p
+    {
+        font-size: 13px;
+    }
+    
+    .zone select
+    {
+        padding: 0 12px;
+        font-size: 13px;
+        width: 277px;
+        height: 41px;
+    }
+
+    .zone:before
+    {
+        right: 14px;
+        top: 18px;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-top: 7px solid #4e4e4e;
+    }
+    
+    
+    /********************/
+    /****** FOOTER ******/
+    /********************/
+    
+
+    #pied_de_page .titre
+    {
+        font-size: 17px;
+    }
+    
+    .mention1 > .texte p, .mention2 > .texte p
+    {
+        font-size: 12px;
+    }
+    
+    .mention3 > .texte p
+    {
+        font-size: 14px;
+    }
+    
+    svg
+    {
+        height: 27px;
+    }
+}
+
+
+
+@media screen and (max-width: 1024px)
+{ 
+    /** Général **/
+
+    .contenu
+    {
+        width: 85%;
+    }
+ 
+    
+    
+    /********************/
+    /****** HEADER ******/
+    /********************/
+    
+    
+    /** Nav **/
+    
+    .logo img
+    {
+        width: 135px;
+    }
+    
+    nav img
+    {
+        height: 14px;
+        width: 16px;
+    }
+    
+    nav li
+    {
+        padding: 0.28em 0.48em;
+    }
+  
+    nav a
+    {
+        font-size: 12px;
+    }
+    
+    
+    
+    /******************/
+    /****** MAIN ******/
+    /******************/
+
+    #deroulement
+    {
+        padding: 26px 0;
+    }
+    
+    /** Parcours **/
+    
+    .etape
+    {
+        padding: 2px;
+    }
+
+    .etape span
+    {
+        font-size: 15px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .etape h1
+    {
+        font-size: 9px;
+        margin-top: 3px;
+    }
+    
+    
+    /** Devis **/
+
+    #procedure
+    {
+        padding: 0 0 98px;
+    }
+
+    .devis
+    {
+        padding: 13px 0 26px;
+    }
+
+    .devis > .titre
+    {
+        padding: 0 13px 2px;
+    }
+
+    .devis > .titre h1
+    {
+        font-size: 11px;
+    }
+
+    .devis > .titre a
+    {
+        padding: 0 12px;
+        height: 28px;
+    }
+
+    .devis > .titre h2
+    {
+        font-size: 11px;
+        margin-top: 1px;
+    }
+
+    .devis > .titre span
+    {
+        font-size: 32px;
+        padding-right: 5px;
+    }
+
+    .formulaire
+    {
+        padding: 0 13px;
+    }
+
+    .case
+    {
+        padding: 7px 0;
+    }
+
+    .case > p
+    {
+        font-size: 11px;
+    }
+    
+    .zone select
+    {
+        padding: 0 10px;
+        font-size: 11px;
+        width: 247px;
+        height: 36px;
+    }
+
+    .zone:before
+    {
+        right: 13px;
+        top: 16px;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #4e4e4e;
+    }
+    
+    
+    
+    /********************/
+    /****** FOOTER ******/
+    /********************/
+    
+
+    #pied_de_page .titre
+    {
+        font-size: 15px;
+    }
+    
+    .mention1 > .texte p, 
+    .mention2 > .texte p
+    {
+        font-size: 10px;
+    }
+    
+    .mention3 > .texte p
+    {
+        font-size: 12px;
+    }
+    
+    .mentions a:hover
+    {
+        color: white;
+    }
+
+    svg
+    {
+        height: 24px;
+    }
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 768px)
+{ 
+    /** Général **/
+
+    .contenu
+    {
+        width: 90%;
+    }
+ 
+    
+    
+    /********************/
+    /****** HEADER ******/
+    /********************/
+    
+    
+    /** Nav **/
+    
+    .logo
+    {
+        width: 60%;
+    }
+    
+    .logo img
+    {
+        width: 130px;
+    }
+    
+    nav
+    {
+        width: 40%;
+    }
+    
+    nav img
+    {
+        height: 13px;
+        width: 15px;
+        margin: auto auto 1px auto;
+    }
+    
+    nav li
+    {
+        margin-left: 10px;
+        padding: 0.3em 0.5em;
+    }
+    
+    nav a > span
+    {
+        display: none;
+    }
+    
+    
+    
+    /******************/
+    /****** MAIN ******/
+    /******************/
+    
+    #deroulement
+    {
+        padding: 24px 0;
+    }
+    
+    
+    /** Parcours **/
+    
+    .etape
+    {
+        width: 80%;
+    }
+    
+    .etape:nth-child(2),
+    .etape:nth-child(3),
+    .etape:nth-child(4),
+    .etape:nth-child(5)
+    {
+        width: 20%;
+    }
+    
+    .etape span
+    {
+        font-size: 14px;
+        width: 18px;
+        height: 18px;
+    }
+    
+    .etape h1
+    {
+        font-size: 9px;
+    }
+    
+    .etape:nth-child(2) h1,
+    .etape:nth-child(3) h1,
+    .etape:nth-child(4) h1,
+    .etape:nth-child(5) h1
+    {
+        display: none;
+    }
+    
+    .etape.active
+    {
+        clip-path: polygon(-10% -10%, 80% -10%, 90% 50%, 80% 110%, -10% 110%, -10% 50%);
+    }
+    
+    
+    
+    /** Devis **/
+
+    #procedure
+    {
+        padding: 0 0 90px;
+    }
+
+    .devis
+    {
+        padding: 12px 0 24px;
+    }
+
+    .devis > .titre
+    {
+        padding: 0 12px 1px;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+    }
+
+    .devis > .titre h1
+    {
+        font-size: 11px;
+        padding: 0 0 10px;
+    }
+
+    .devis > .titre a
+    {
+        padding: 0 11px;
+        height: 26px;
+        margin-bottom: 5px;
+    }
+
+    .devis > .titre h2
+    {
+        font-size: 11px;
+        margin-top: 2px;
+    }
+
+    .devis > .titre span
+    {
+        font-size: 29px;
+        padding-right: 4px;
+        margin-top: 0;
+    }
+
+    .formulaire
+    {
+        padding: 0 12px;
+    }
+
+    .case
+    {
+        padding: 6px 0;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        margin: auto;
+        width: 90%;
+        max-width: 242px;
+    }
+    
+    .case span
+    {
+        width: 100%;
+    }
+
+    .case > p
+    {
+        font-size: 11px;
+        text-align: center;
+        width: 100%;
+        padding: 10px 0 5px;
+    }
+    
+    .zone
+    {
+        justify-content: center;
+        -webkit-justify-content: center;
+        overflow: visible;
+        width: 100%;
+    }
+    
+    .zone select
+    {
+        padding: 0 9px;
+        font-size: 10px;
+        height: 33px;
+        width: 100%;
+    }
+
+    .zone:before
+    {
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #4e4e4e;
+    }
+    
+    .box > div:first-child, .box > div:last-child
+    {
+        display: none;
+    }
+    
+    .boutons_responsive img.retour,
+    .boutons_responsive img.suivant
+    {
+        width: 33px;
+    }
+    
+    .boutons_responsive
+    {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+    }
+
+    
+    
+    /********************/
+    /****** FOOTER ******/
+    /********************/
+    
+    
+    #pied_de_page .bloc
+    {
+        display: none;
+    }
+    
+    #pied_de_page .sidenav
+    {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: center;
+        -webkit-justify-content: center;
+        flex-direction: column;
+        padding-bottom: 1em;
+    }
+    
+    #pied_de_page .titre
+    {
+        font-size: 14px;
+    }
+    
+    .dropdown .mention1, .dropdown .mention2, .dropdown .mention3
+    {
+        background: none;
+        border: none;
+        font-family: 'Montserrat', sans-serif;
+        padding: 0;
+    }
+    
+    .mention1 .titre p, .mention2 .titre p, .mention3 .titre p
+    {
+        border: 5px solid #3fc1a9;
+        margin-top: -10px;
+        width: 6.8em;
+    }
+    
+    .mentions a:hover
+    {
+        color: white;
+    }
+    
+    .social
+    {
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+        padding: 10px 1em 0;
+    }
+
+    svg
+    {
+        height: 22px;
+    }
+
+    .sidenav a, .dropdown-btn 
+    {
+        text-decoration: none;
+        display: block;
+        border: none;
+        background: none;
+        text-align: left;
+        cursor: pointer;
+        outline: none;
+        width: 100%;
+    }
+
+    .dropdown-container 
+    {
+        display: none;
+        margin-bottom: 1em;
+    }
+    
+    .fa-caret-down
+    {
+        color: white;
+        float: right;
+    }
+    
+    .dropdown-container a
+    {
+        color: white;
+        padding: 4px 0;
+        text-align: center;
+        font-size: 10px;
+        margin: auto;
+        font-weight: 500;
+    }
+    
+    .dropdown-container p
+    {
+        color: white;
+        padding: 4px 0;
+        text-align: center;
+        font-size: 12px;
+        margin: auto;
+        font-weight: 500;
+    }
+    
+    .dropdown:nth-child(3) .dropdown-container p
+    {
+        padding: 10px;
+    }
+    
+    .dropdown-container p
+    {
+        padding: 5px 4em;
+    }
+}
